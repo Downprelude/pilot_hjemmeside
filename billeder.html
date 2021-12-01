@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="billeder.css" />
+  </head>
+  <body>
+    <section class="showcase">
+      <header>
+        <h2 class="logo">Passion</h2>
+        <div class="toggle"></div>
+      </header>
+
+      <div class="image-grid">
+        <img
+          class="image-grid-col-2 image-row-col-2"
+          src="billeder/image1.png"
+          alt=""
+        />
+        <img src="billeder/image2.png" alt="" />
+        <img src="billeder/image3.png" alt="" />
+        <img src="billeder/image4.png" alt="" />
+        <img src="billeder/image5.png" alt="" />
+      </div>
+    </section>
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pilot.html">HTML Video</a></li>
+        <li><a href="youpilot.html">YouTube video</a></li>
+        <li><a href="billeder.html">Billeder</a></li>
+      </ul>
+    </div>
+
+    <script>
+      const menuToggle = document.querySelector(".toggle");
+      const showcase = document.querySelector(".showcase");
+
+      menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        showcase.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
